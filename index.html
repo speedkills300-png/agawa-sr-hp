@@ -79,8 +79,11 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  @media (min-width: 820px) {
-    .grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  @media (min-width: 720px) {
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  }
+  @media (min-width: 1080px) {
+    .grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   }
 
   .card {
@@ -194,6 +197,70 @@
     border-radius: 999px;
   }
 
+  /* Preview: 案C（ダークネオン） */
+  .preview--dark {
+    background: #0a0d1a;
+    position: relative;
+    overflow: hidden;
+  }
+  .preview--dark::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 300px 200px at 20% 30%, rgba(91, 140, 255, 0.5), transparent 60%),
+      radial-gradient(ellipse 260px 200px at 80% 70%, rgba(180, 92, 255, 0.45), transparent 60%),
+      radial-gradient(ellipse 220px 180px at 50% 100%, rgba(0, 229, 255, 0.35), transparent 60%);
+    filter: blur(8px);
+  }
+  .preview--dark::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  }
+  .preview--dark .neon-initial {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: clamp(70px, 14vw, 110px);
+    aspect-ratio: 1;
+    border-radius: 22%;
+    background: linear-gradient(135deg, #5b8cff, #b45cff 55%, #ff5cad);
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: -0.03em;
+    box-shadow:
+      0 0 40px rgba(91, 140, 255, 0.6),
+      0 0 80px rgba(180, 92, 255, 0.35),
+      inset 0 1px 0 rgba(255,255,255,0.25);
+    z-index: 1;
+  }
+  .preview--dark .neon-badge {
+    position: absolute;
+    bottom: 1.2rem; left: 1.2rem;
+    font-family: "JetBrains Mono", "Inter", sans-serif;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #5b8cff;
+    padding: 0.35em 0.85em;
+    background: rgba(91, 140, 255, 0.12);
+    border: 1px solid rgba(91, 140, 255, 0.35);
+    border-radius: 999px;
+    z-index: 1;
+  }
+
   .card-body { padding: 1.8rem 1.8rem 2rem; }
   .plan-label {
     font-family: "Inter", sans-serif;
@@ -256,7 +323,7 @@
       <span class="eyebrow">Design Proposal</span>
       <h1>阿川社会保険労務士事務所<br>ホームページ デザイン案</h1>
       <p class="lead">
-        2つの方向性でご用意しました。カードをクリックすると各案の全ページをご覧いただけます。
+        3つの方向性でご用意しました。カードをクリックすると各案の全ページをご覧いただけます。
       </p>
     </header>
 
@@ -300,6 +367,27 @@
             白基調 × クリーンブルーのモダン配色で、先進的で明るい印象。Bentoグリッドやカウントアップ数値で現代的なSaaSトーンに。
           </p>
           <span class="link">案Bを見る</span>
+        </div>
+      </a>
+
+      <a href="./asr3/" class="card" aria-label="案C ダークネオンを見る">
+        <div class="preview preview--dark">
+          <div class="neon-initial">A</div>
+          <div class="neon-badge">Neon</div>
+        </div>
+        <div class="card-body">
+          <div class="plan-label">Plan C</div>
+          <h2>ダークネオン</h2>
+          <div class="palette">
+            <span class="swatch" style="background:#0a0d1a"></span>
+            <span class="swatch" style="background:#5b8cff"></span>
+            <span class="swatch" style="background:#b45cff"></span>
+            <span class="swatch" style="background:#ff5cad"></span>
+          </div>
+          <p>
+            ダーク背景にネオングラデーション。グラスモーフィズム＋動くオーブで、フィンテック／SaaS のような尖った雰囲気に。
+          </p>
+          <span class="link">案Cを見る</span>
         </div>
       </a>
     </div>

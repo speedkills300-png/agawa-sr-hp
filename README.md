@@ -4,9 +4,10 @@
 
 ## 公開URL
 
-- ランディング（両案の比較）: https://speedkills300-png.github.io/agawa-sr-hp/
+- ランディング（3案の比較）: https://speedkills300-png.github.io/agawa-sr-hp/
 - 案A（和モダン）: https://speedkills300-png.github.io/agawa-sr-hp/asr/
 - 案B（クリーンモダン）: https://speedkills300-png.github.io/agawa-sr-hp/asr2/
+- 案C（ダークネオン）: https://speedkills300-png.github.io/agawa-sr-hp/asr3/
 
 ## 構成
 
@@ -20,7 +21,14 @@
 │   ├── access.html
 │   ├── contact.html
 │   └── assets/
-└── asr2/               # 案B: クリーンモダン（白×ブルー）
+├── asr2/               # 案B: クリーンモダン（白×ブルー）
+│   ├── index.html
+│   ├── about.html
+│   ├── services.html
+│   ├── access.html
+│   ├── contact.html
+│   └── assets/
+└── asr3/               # 案C: ダークネオン（黒×ネオングラデ）
     ├── index.html
     ├── about.html
     ├── services.html
