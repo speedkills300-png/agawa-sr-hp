@@ -4,10 +4,10 @@
 
 ## 公開URL
 
-- ランディング（3案の比較）: https://speedkills300-png.github.io/agawa-sr-hp/
-- 案A（和モダン）: https://speedkills300-png.github.io/agawa-sr-hp/asr/
-- 案B（クリーンモダン）: https://speedkills300-png.github.io/agawa-sr-hp/asr2/
-- 案C（ダークネオン）: https://speedkills300-png.github.io/agawa-sr-hp/asr3/
+- ランディング（3案の比較）: https://talab300.github.io/agawa-sr-hp/
+- 案A（和モダン）: https://talab300.github.io/agawa-sr-hp/asr/
+- 案B（クリーンモダン）: https://talab300.github.io/agawa-sr-hp/asr2/
+- 案C（ダークネオン）: https://talab300.github.io/agawa-sr-hp/asr3/
 
 ## 構成
 
